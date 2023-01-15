@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&family=Ubuntu&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title><%= listTitle %></title>
+</head>
+<body>
+  <div class="header">
+    <h1><%= listTitle %>'s to-do List</h1>
+  </div>
+  <div class="game-body-div">
+    <div class="box">
+        <% for(var i = 0; i < listArray.length; i++){ %>
+            <div class="item">
+                <input type="checkbox">
+                <p><%= listArray[i] %></p>
+            </div>
+        <% } %>
+        <form action="/" method="post" class="item">
+            <input class="inp-list" type="text" name="task" placeholder="New Item" autocomplete="off">
+            <button type="submit" name="list" class="item-btn btn" value=<%= listTitle%>>+</button>
+        </form>
+    </div>
+  </div>
+
+<%- include('partials/footer')%>

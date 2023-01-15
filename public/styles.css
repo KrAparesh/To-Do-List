@@ -1,0 +1,168 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Ubuntu;
+}
+
+.header {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252A34;
+}
+
+.header h1 {
+    font-family: Ubuntu;
+    font-size: 70px;
+    color: #F6F6F6;
+}
+
+.body-div {
+    height: 80%;
+    background-color: #393E46;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-div h1{
+    color: #F6F6F6;
+}
+
+.inp-bar {
+    height: 50%;
+}
+
+.name-inp {
+    width: 160px;
+    height: 30px;
+    background-color: #F6F6F6;
+    border-radius: 12px;
+    border: none;
+    text-align: center;
+    margin: 12px 7px;
+}
+
+.btn {
+    width: 50px;
+    height: 30px;
+    border-radius: 12px;
+    border: none;
+    background-color: #08D9D6;
+}
+
+.dp_none {
+    display: none;
+}
+
+#btn-begin {
+    width: 80px;
+    height: 40px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 0 rgba(100, 100, 100, 0.568);
+    opacity: 100%;
+}
+
+.name-inp:hover {
+    box-shadow: 2px 2px 2px 0 rgba(100, 100, 100, 0.568)
+}
+
+/* GAME BODY CSS */
+.game-body-div {
+    height: 80%;
+    background-color: #393E46;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-header-div {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.game-body-div h1 {
+    color:#F6F6F6;
+}
+
+.user-div, .vs, .rooster-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.roll-btn-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.btn-roll {
+    width: 100px;
+    height: 50px;
+    font-size: 1.1em;
+    color: #F6F6F6;
+    opacity: 80%;
+}
+
+.box {
+    max-width: 600px;
+    margin: 60px auto;
+    background: #F6F6F6;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  }
+
+  .item {
+    min-height: 70px;
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+  }
+  
+  .item:last-child {
+    border-bottom: 0;
+  }
+
+  input:checked+p {
+    text-decoration: line-through;
+    text-decoration-color: #333;
+  }
+  
+  input[type="checkbox"] {
+    margin: 20px;
+  }
+  
+  .inp-list {
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 200;
+    width: 313px;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    box-shadow: inset 0 -3px 0 0 #08D9D6;
+  }
+  
+  .item-btn {
+    min-width: 60px;
+  }
+
+  ::placeholder {
+    color: #333;
+    opacity: 1;
+  }
