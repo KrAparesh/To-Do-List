@@ -54,6 +54,6 @@ app.get("/list", function(req, res){
     }
 })
 
-app.listen(`$PORT`, () => console.log(`The server is live on port ${PORT}`));
+app.listen(`3000`, () => console.log(`The server is live on port 3000`));
 
 
